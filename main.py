@@ -15,24 +15,46 @@
 # print(result)
 #
 #
-myFinalMarks = {'CSF': 75,
-                'FunPro': 80,
-                'WT': 85}
+# myFinalMarks = {'CSF': 75,
+#                 'FunPro': 80,
+#                 'WT': 85}
+#
+#
+# def calculate(key):
+#     sum1 = 0
+#
+#     for i in key:
+#         sum1 = sum1 + key[i]
+#
+#     _final_result = sum1 / myFinalMarks.__len__()
+#     print(_final_result)
+#
+#
+# calculate(myFinalMarks)
+
+# h = {'a': 1, 'b': 1, 'o': 2, 'n': 1, 's': 2, 'r': 2, 'u': 2, 't': 1}
+
+# def histogram(s):
+#     d = dict()
+#     for c in s:
+#         if c not in d:
+#             d[c] = 1
+#         else:
+#             d[c] += 1
+#         return d
+#
+# h = histogram('brontosaurus')
+# print(histogram(h))
 
 
-def calculate(key):
-    sum1 = 0
+csf = {
+'cw1-weight': 0.4,
+'cw1-mark': 79,
+'exam-weight': 0.6,
+'exam-mark': 65
+}
 
-    for i in key:
-        sum1 = sum1 + key[i]
-
-    _final_result = sum1 / myFinalMarks.__len__()
-    print(_final_result)
-
-
-calculate(myFinalMarks)
-
-
-# letters = {
-#             'a' =
-# }
+first = csf.get('cw1-weight') * csf.get('cw1-mark')
+exam = csf.get('exam-weight') * csf.get('exam-mark')
+final = first + exam
+print(final)
